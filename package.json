@@ -4,8 +4,7 @@
   "description": "Simple BlockChain using typescript",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.ts",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
   },
   "repository": {
     "type": "git",
