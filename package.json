@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/yjglab/SimpleChain/issues"
   },
-  "homepage": "https://github.com/yjglab/SimpleChain#readme"
+  "homepage": "https://github.com/yjglab/SimpleChain#readme",
+  "dependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "crypto-js": "^4.1.1"
+  }
 }
