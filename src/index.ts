@@ -1,9 +1,18 @@
-interface Person {
-  name: string;
-  age: number;
-  gender: string;
+// interface Person {
+//   name: string;
+//   age: number;
+//   gender: string;
+// }
+class Person {
+  public name: string;
+  public age: number;
+  public gender: string;
+  constructor(name: string, age: number, gender?: string) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
 }
-
 const name = "yjglab",
   age = 100,
   gender = "male";
@@ -13,6 +22,8 @@ const obj = {
   age: 100,
   gender: "male",
 };
+const yjgObj = new Person("yjg", 100, "male");
+
 const say = (name: string, age: number, gender: string): boolean => {
   console.log(`say() => ${name} ddssssssssaaa ${age} ${gender}`);
 
@@ -23,5 +34,5 @@ const sayObj = (obj: Person): string => {
 };
 
 console.log(say(name, age, gender));
-console.log(sayObj(obj));
+console.log(sayObj(yjgObj));
 export {};
